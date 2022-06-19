@@ -44,9 +44,10 @@ body {
 .sidebar {
     background-color: #FCD34D;
     display: grid;
-    grid-template-rows: 16px 1fr 16px 1fr;
+    grid-template-rows: 16px min(500px, 1fr) 16px min(500px, 1fr);
     gap: 25px;
     padding: 20px;
+    align-content: flex-start;
 }
 
 .head {
@@ -62,6 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: minmax(40vh, 250px);
 }
 .trend{
     gap: 20px;
@@ -88,7 +90,6 @@ ul {
 }
 
 .project {
-    height: 200px;
     background-color: #FEF3C7;
     padding: 20px;
     border-radius: 10px;
